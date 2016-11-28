@@ -1,5 +1,5 @@
 <?php
-
+if(count($_FILES['myfile']['name']) > 0){
 foreach($_FILES['myfile']['name'] as $key=>$val){
         //upload and stored images
         $target_dir = "uploads/";
@@ -8,4 +8,5 @@ foreach($_FILES['myfile']['name'] as $key=>$val){
             $images_arr[] = $target_file;
         }
     }
+	}
 ?>
