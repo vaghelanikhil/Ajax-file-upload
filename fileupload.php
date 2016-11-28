@@ -1,7 +1,7 @@
 <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
 
 <form action="upload.php" method="post" enctype="multipart/form-data" target="upload_target" >
-    File: <input name="myfile" type="file" />
+    File: <input name="myfile[]" type="file" multiple/>
           <input type="submit" name="submitBtn" value="Upload" />
 </form>
 
